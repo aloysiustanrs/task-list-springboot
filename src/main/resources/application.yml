@@ -13,12 +13,13 @@ spring:
     password: 123454
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-    spring:
-      jpa:
-        properties:
-          hibernate:
-            dialect: org.hibernate.dialect.MySQLDialect
-
   jpa:
-    show-sql: true
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
+
+
+
+
 
